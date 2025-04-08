@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit's Retro GameBoy Portfolio</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #33ff33;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      animation: flicker 0.2s infinite alternate;
+    }
+
+    @keyframes flicker {
+      from { opacity: 1; }
+      to { opacity: 0.97; }
+    }
+
+    h1, h2 {
+      color: #39ff14;
+      text-shadow: 0 0 5px #39ff14;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    a {
+      color: #33ff33;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #00ffcc;
+      text-shadow: 0 0 5px #00ffcc;
+    }
+
+    pre {
+      background: #0f0f0f;
+      padding: 10px;
+      border-left: 3px solid #33ff33;
+      margin-bottom: 20px;
+      animation: slideIn 0.8s ease-in-out;
+    }
+
+    .blinker {
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    blockquote {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+
+    .button-container {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .retro-button {
+      padding: 10px 20px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      color: #1a1a1a;
+      background: #33ff33;
+      border: 2px solid #0f0f0f;
+      box-shadow: 2px 2px #0f0f0f;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .retro-button:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px #0f0f0f;
+      background: #00ffcc;
+      color: #0f0f0f;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Ankit's Retro GameBoy Portfolio<span class="blinker">_</span></h1>
+  <p>Welcome to the pixelated universe of <strong>Ankit Bhaumik</strong>, where every line of code is a power-up! 💾</p>
+  <hr />
+
+  <h2>🧑‍💻 Player Info</h2>
+  <pre>
+🧑 Name: Ankit Bhaumik
+🎓 Role: B.Tech (AI) Student | Developer | Innovator
+📍 Location: India
+🎮 Age: 19
+  </pre>
+
+  <h2>🎓 Skill Stats</h2>
+  <pre>
+💻 Programming: Python, C++, Java, JavaScript
+🤖 AI/ML: OpenCV, MediaPipe, NumPy, Pandas, Scikit-learn
+🧠 Projects: BioLens, Sign Language Detector, Al-Mirah, TSVA
+🎨 Tools: Flutter, Supabase, Git, Firebase
+🎯 Interests: AI Systems, Game Dev, Computer Vision, Startups
+  </pre>
+
+  <h2>🏆 Achievements</h2>
+  <pre>
+🏅 NPTEL Certificates:
+   - Design and Analysis of Algorithms (DAA)
+   - Operating Systems
+
+📁 GitHub Projects:
+   - Sign_Language (Real-Time Detection using CNN + MediaPipe)
+   - BioLens (AI-Powered Calorie Tracker with Visual Recognition, E-Bill Analysis, Posture/Exercise Tracking)
+   - Al-Mirah (AI Wardrobe System with Gesture Control and Weather/Emotion-based Outfit Suggestions)
+   - TSVA (Term Sheet Validation using AI with OCR + NLP + Compliance)
+
+🎮 Other Creative Concepts:
+   - AI-Powered Gesture-Based Game Controller (MediaPipe Hands)
+   - Underground OS for modded games
+   - AI Battle Royale & Dream Generator
+  </pre>
+
+  <h2>📚 Education</h2>
+  <pre>
+📘 B.Tech in Artificial Intelligence
+🏫 University: [Your College Name]
+📅 Year: 1st Year (Since 2024)
+  </pre>
+
+  <h2>💼 Experience</h2>
+  <pre>
+📊 Freelance & Hackathon Developer
+📦 Project Builder with Real-World Impact
+⚙️ Built AI-powered systems & full-stack apps
+  </pre>
+
+  <h2>📞 Contact Me</h2>
+  <pre>
+📧 Email: ankitbhaumik916@gmail.com
+🌐 GitHub: https://github.com/Ankitbhaumik916
+🔗 LinkedIn: https://www.linkedin.com/in/ankit-bhaumik/
+  </pre>
+
+  <div class="button-container">
+    <button class="retro-button">🎯 Hire Me</button>
+    <button class="retro-button">💡 View Projects</button>
+    <button class="retro-button">📄 Resume</button>
+  </div>
+
+  <blockquote><em>"Every bug defeated adds +10 XP to your developer soul!" 🚀</em></blockquote>
+</body>
+</html>
